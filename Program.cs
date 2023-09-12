@@ -21,7 +21,7 @@ app.UseRouting();
 
 app.MapControllerRoute(
 	name: "defailt",
-	pattern: "{controller=Home}/{action=Index}/{id?}");
+	pattern: "{controller=Home}/{action=URL}/{id?}");
 
 app.UseAuthorization();
 
