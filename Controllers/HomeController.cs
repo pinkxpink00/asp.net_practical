@@ -5,9 +5,12 @@ namespace asp.net_practice.Controllers
 
 	public class HomeController : Controller
 	{
+
 		public IActionResult Index()
 		{
-			return new HtmlResult("Hello Kitty");
+			
+			Person person = new Person("Tom", 224);
+			return Json(person);
 		}
 	}
 }
