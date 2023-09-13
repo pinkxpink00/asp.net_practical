@@ -21,7 +21,7 @@ app.UseRouting();
 
 app.MapControllerRoute(
 	name: "defailt",
-	pattern: "{controller=Home}/{action=Contact}/{id?}");
+	pattern: "{controller=Home}/{action=GetFile}/{id?}");
 
 app.UseAuthorization();
 

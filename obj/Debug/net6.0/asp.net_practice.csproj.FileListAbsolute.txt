@@ -29,3 +29,4 @@ C:\Users\kyper\source\repos\asp.net_practice\obj\Debug\net6.0\refint\asp.net_pra
 C:\Users\kyper\source\repos\asp.net_practice\obj\Debug\net6.0\asp.net_practice.pdb
 C:\Users\kyper\source\repos\asp.net_practice\obj\Debug\net6.0\asp.net_practice.genruntimeconfig.cache
 C:\Users\kyper\source\repos\asp.net_practice\obj\Debug\net6.0\ref\asp.net_practice.dll
+C:\Users\kyper\source\repos\asp.net_practice\bin\Debug\net6.0\Files\TextFile.txt

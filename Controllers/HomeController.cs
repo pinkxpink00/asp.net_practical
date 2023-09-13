@@ -5,18 +5,12 @@ namespace asp.net_practice.Controllers
 
 	public class HomeController : Controller
 	{
+		public IActionResult GetFile()
+		{
+			string file_path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Files/TextFile.txt");
+			string file_type = "text/plain";
 
-		public IActionResult Index()
-		{
-			return Content("Index");
-		}
-		public IActionResult About()
-		{
-			return Content("About");
-		}
-		public IActionResult Contact()
-		{
-			return Redirect("https://microsoft.com");
+			return PhysicalFile(file_path,file_type);
 		}
 	}
 }
