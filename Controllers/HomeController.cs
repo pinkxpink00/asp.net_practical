@@ -8,9 +8,15 @@ namespace asp.net_practice.Controllers
 
 		public IActionResult Index()
 		{
-			
-			Person person = new Person("Tom", 224);
-			return Json(person);
+			return Content("Index");
+		}
+		public IActionResult About()
+		{
+			return Content("About");
+		}
+		public IActionResult Contact()
+		{
+			return Redirect("https://microsoft.com");
 		}
 	}
 }
