@@ -11,6 +11,9 @@ namespace asp.net_practice.Controllers
 		{
 			timeService = timeServ;
 		}
-		public string Index() => timeService.Time;
+		public string Index([FromServices] ITimeService timeService)
+		{
+			return timeService.Time;
+		}
 	}
 }
