@@ -5,12 +5,12 @@ namespace asp.net_practice.Controllers
 
 	public class HomeController : Controller
 	{
-		public IActionResult GetFile()
-		{
-			string file_path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Files/TextFile.txt");
-			string file_type = "text/plain";
+		readonly ITimeService timeService;
 
-			return PhysicalFile(file_path,file_type);
+		public HomeController(ITimeService timeServ)
+		{
+			timeService = timeServ;
 		}
+		public string Index() => timeService.Time;
 	}
 }
